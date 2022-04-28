@@ -1,6 +1,13 @@
 
 function filterEvenElements(arr) {
     // your code here
+    var result = [];
+	arr.filter(function (num){
+		if (num % 2 === 0){
+			result.push(num);
+		}
+	});
+	return result;
 }
 
 var output = filterEvenElements([2, 3, 4, 5, 6]);
